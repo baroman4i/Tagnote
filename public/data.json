@@ -1,0 +1,7 @@
+[
+  {
+    "id":1,
+    "text":"this is #first message",
+    "tags":[{"id": 0,"text":"first"}]
+  }
+]

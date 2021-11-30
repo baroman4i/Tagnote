@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+}
+
+.toolbar {
+  margin: auto;
+  width: 90%;
+}
+
+.toolbar button, .toolbar select {
+  width: auto;
+  height: 30px;
+  padding: 3px 5px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.note-list {
+  width: 90%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fbffe2;
+}
+
+.note-list .note {
+  width: 300px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 23px;
+  background-color: #e9ec54;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 2px dashed #b37228;
+  margin: 5px;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(142, 169, 44, 0.2);
+          box-shadow: 1px 1px 5px 1px rgba(142, 169, 44, 0.2);
+}
+
+.note-list .note .tag-list {
+  width: 95%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.note-list .note .tag-list li {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-size: 15px;
+  height: 30px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background-color: #c8d19d;
+  -webkit-transition: .3s;
+  transition: .3s;
+  list-style-type: "#";
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px rgba(93, 91, 91, 0.5);
+          box-shadow: 1px 1px 5px rgba(93, 91, 91, 0.5);
+}
+
+.note-list .note .tag-list li:hover {
+  -webkit-box-shadow: 1px 1px 1px rgba(93, 91, 91, 0.5);
+          box-shadow: 1px 1px 1px rgba(93, 91, 91, 0.5);
+}
+
+.note-list .note .tag-list li:hover::after {
+  content: "Search this!";
+  position: absolute;
+  width: 90px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.note-list .note .note-footer {
+  width: 90%;
+  margin: 5px auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.note-list .note .note-footer button {
+  padding: 3px 5px;
+  background-color: #dcc149;
+  border: none;
+  border-radius: 5px;
+  margin: auto 5px;
+  cursor: pointer;
+}
+
+.note-list .note .note-footer button:hover {
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.note-list .note .note-container {
+  height: 250px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.note-list .note .note-body {
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+  resize: none;
+  margin: auto;
+  overflow: hidden;
+  background-color: inherit;
+  border: none;
+  overflow-y: auto;
+  font-size: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+.note-list .note p.note-body {
+  z-index: 0;
+}
+
+.note-list .note p.note-body .mark {
+  text-decoration: underline;
+}
+
+.note-info {
+  width: 80%;
+  margin: 10px auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=App.css.map */
